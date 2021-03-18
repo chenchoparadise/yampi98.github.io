@@ -1,0 +1,53 @@
+{
+  "name": "ui95",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "start-storybook -p 6006",
+    "build": "npm run build-example && npm run build-storybook",
+    "build-example": "parcel build src/example/index.html --detailed-report --out-dir docs/example/ --public-url /example/ --no-source-maps",
+    "build-storybook": "build-storybook --output-dir docs/storybook/",
+    "watch-docs": "docsify serve docs",
+    "watch-example": "parcel src/example/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-syntax-dynamic-import": "^7.7.4",
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-links": "^5.2.8",
+    "@storybook/addon-storysource": "^5.2.8",
+    "@storybook/addons": "^5.2.8",
+    "@storybook/react": "^5.2.8",
+    "aphrodite": "^2.4.0",
+    "babel-loader": "^8.0.6",
+    "bem-cn": "^3.0.1",
+    "css-loader": "^3.4.1",
+    "docsify-cli": "^4.4.0",
+    "domready": "^1.0.8",
+    "faker": "^4.1.0",
+    "gray-matter": "^4.0.2",
+    "image-webpack-loader": "^5.1.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "load-script": "^1.0.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
+    "style-loader": "^0.23.1"
+  },
+  "dependencies": {
+    "babel-preset-preact": "^2.0.0",
+    "classnames": "^2.2.6",
+    "icons95": "^1.4.1",
+    "lodash": "^4.17.15",
+    "md5": "^2.2.1",
+    "preact": "^10.1.1",
+    "preact-compat-enzyme": "^0.2.5",
+    "preact-test-utils": "^0.1.4",
+    "resize-observer": "^1.0.0",
+    "social-share-links": "^2.0.0"
+  },
+  "prettier": {}
+}
